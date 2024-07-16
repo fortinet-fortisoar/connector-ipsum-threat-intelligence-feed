@@ -2,7 +2,7 @@
   "name": "ipsum-threat-intelligence-feed",
   "version": "1.0.0",
   "label": "IPsum Threat Intelligence Feed",
-  "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. This connector facilitates automated operations such as indicators.<br/><br/>This connector has a dependency on the <a href=\"/content-hub/all-content/?contentType=solutionpack&amp;tag=ThreatIntelManagement\" target=\"_blank\" rel=\"noopener\">Threat Intel Management Solution Pack</a>. Install the Solution Pack before enabling ingestion of Threat Feeds from this source.",
+  "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. This connector facilitates automated operations related to fetching the list indicators. <br/><br/>This connector has a dependency on the <a href=\"/content-hub/all-content/?contentType=solutionpack&amp;tag=ThreatIntelManagement\" target=\"_blank\" rel=\"noopener\">Threat Intel Management Solution Pack</a>. Install the Solution Pack before enabling ingestion of Threat Feeds from this source.",
   "publisher": "Fortinet",
   "cs_approved": true,
   "cs_compatible": true,
@@ -71,7 +71,7 @@
           ],
           "value": "Create as Feed Records in FortiSOAR",
           "tooltip": "The Feed Data can either be returned as a JSON; written to a file on the FortiSOAR server; or Created as Feed Records in FortiSOAR",
-          "description": "Select the method of returning the Feed Data information. You can choose from following options: Create as Feed Records in FortiSOAR: Specify the IRI of the Record Creation Playbook in Record Creation Playbook IRI field. Save to File: Specify the name of the file, in which to save the feed information retrieved from IBM X-Force, in the Filename field. Return as a JSON: Select this option to receive feeds as a JSON object.",
+          "description": "Select the method of returning the Feed Data information. You can choose from following options: Create as Feed Records in FortiSOAR: Specify the IRI of the Record Creation Playbook in Record Creation Playbook IRI field. Return as a JSON: Select this option to receive feeds as a JSON object.",
           "onchange": {
             "Create as Feed Records in FortiSOAR": [
               {
@@ -88,7 +88,12 @@
           }
         }
       ],
-      "output_schema": {}
+      "output_schema": [
+        {
+          "ip": "",
+          "count": ""
+        }
+      ]
     }
   ]
 }
