@@ -80,17 +80,20 @@ Click Let’s Start by fetching some data, to open the “Fetch Sample Data” s
 ![](media/start.png)
 
 Sample data is required to create a field mapping between the IPsum Threat Intelligence Feeds and FortiSOAR™. The sample data is pulled from connector actions or ingestion playbooks.
+
 2.  On the Fetch Data screen, provide the configurations required to fetch IPsum Threat Intelligence Feeds. You can pull data from IPsum Threat Intelligence Feed and add custom confidence level, reputation, and TLP to that feed. 
 
 ![](media/fetch.png)
 
 The fetched data is used to create a mapping between the IPsum Threat Intelligence Feeds and FortiSOAR™ threat intel feeds. Once you have completed specifying the configurations, click Fetch Data.
+
 3.  On the Field Mapping screen, map the fields of a IPsum Threat Intelligence Feed to the fields of a threat intel feed present in FortiSOAR™.
 To map a field, click the key in the sample data to add the “jinja” value of the field. For example, to map the ip parameter of a IPsum Threat Intelligence Feed to the id parameter of a FortiSOAR™ threat intel feed, click the id field, and then click the ip field to populate its keys: 
 
 ![](media/mapping.png)
 
 For more information on field mapping, see the Data Ingestion chapter in the "Connectors Guide" in the FortiSOAR™ product documentation. Once you have completed mapping the fields, click Save Mapping & Continue.
+
 4.  Use the Scheduling screen to configure schedule-based ingestion, i.e., specify the polling frequency to IPsum Threat Intelligence Feed, so that the content gets pulled from the IPsum Threat Intelligence Feed integration into FortiSOAR™.
 On the Scheduling screen, from the Do you want to schedule the ingestion? drop-down list, select Yes.
 In the “Configure Schedule Settings” section, specify the Cron expression for the schedule. For example, if you want to pull data from IPsum Threat Intelligence Feed every morning at 5 am, click Daily, and in the hour box enter 5 , and in the minute box enter 0:
@@ -98,4 +101,5 @@ In the “Configure Schedule Settings” section, specify the Cron expression fo
 ![](media/scheduling.png)
 
 Once you have completed scheduling, click Save Settings & Continue.
+
 5.  The Summary screen displays a summary of the mapping done, and it also contains links to the Ingestion playbooks. Click Done to complete the data ingestion, and exit the Data Ingestion Wizard.
