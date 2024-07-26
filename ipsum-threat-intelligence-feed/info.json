@@ -6,7 +6,8 @@
   "publisher": "Fortinet",
   "cs_approved": true,
   "cs_compatible": true,
-  "help_online": "",
+  "contributor": "",
+  "help_online": "https://github.com/fortinet-fortisoar/connector-ipsum-threat-intelligence-feed/blob/release/1.0.0/docs/IPsumTIFeed.md",
   "icon_small_name": "small.png",
   "icon_large_name": "large.png",
   "category": "Threat Intelligence",
@@ -70,18 +71,19 @@
             "Return as a JSON"
           ],
           "value": "Create as Feed Records in FortiSOAR",
-          "tooltip": "The Feed Data can either be returned as a JSON; written to a file on the FortiSOAR server; or Created as Feed Records in FortiSOAR",
+          "tooltip": "The Feed Data can either be returned as a JSON or Created as Feed Records in FortiSOAR",
           "description": "Select the method of returning the Feed Data information. You can choose from following options: Create as Feed Records in FortiSOAR: Specify the IRI of the Record Creation Playbook in Record Creation Playbook IRI field. Return as a JSON: Select this option to receive feeds as a JSON object.",
           "onchange": {
             "Create as Feed Records in FortiSOAR": [
               {
                 "title": "Record Creation Playbook IRI",
-                "description": "",
+                "description": "Specify the IRI of the playbook that creates feed records in FortiSOAR™ in the Record Creation Playbook IRI field.",
                 "type": "text",
                 "name": "create_pb_id",
                 "required": false,
                 "editable": true,
-                "visible": true
+                "visible": true,
+                "tooltip": "Specify the IRI of the playbook that creates feed records in FortiSOAR™ in the Record Creation Playbook IRI field."
               }
             ],
             "Return as a JSON": []
