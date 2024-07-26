@@ -39,10 +39,8 @@ The following automated operations can be included in playbooks and you can also
 
 ### operation: Get Indicators
 #### Input parameters
-<table border=1><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td>Process Response As</td><td>Select the method of returning the Feed Data information. You can choose from following options: 
-    Create as Feed Records in FortiSOAR: Specify the IRI of the Record Creation Playbook in Record Creation Playbook IRI field. 
-    Return as a JSON: Select this option to receive feeds as a JSON object.
-<br><strong>If you choose 'Create as Feed Records in FortiSOAR'</strong><ul><li>Record Creation Playbook IRI: Specify the IRI of the playbook that creates feed records in FortiSOAR™ in the Record Creation Playbook IRI field.</li></ul><strong>
+<table border=1><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td>Process Response As</td><td>Select the method of returning the Feed Data information. You can choose from following options: <br> Create as Feed Records in FortiSOAR: Specify the IRI of the Record Creation Playbook in Record Creation Playbook IRI field. <br> Return as a JSON: Select this option to receive feeds as a JSON object.
+<br><strong>If you choose 'Create as Feed Records in FortiSOAR'</strong><ul><li>Record Creation Playbook IRI: Specify the IRI of the playbook that creates feed records in FortiSOAR™ in the Record Creation Playbook IRI field.</li></ul></td></tr></tbody></table>
 
 #### Output
 The output contains the following populated JSON schema:
@@ -90,7 +88,7 @@ Sample data is required to create a field mapping between the IPsum Threat Intel
 The fetched data is used to create a mapping between the IPsum Threat Intelligence Feeds and FortiSOAR™ threat intel feeds. Once you have completed specifying the configurations, click Fetch Data.
 
 3.  On the Field Mapping screen, map the fields of a IPsum Threat Intelligence Feed to the fields of a threat intel feed present in FortiSOAR™.
-To map a field, click the key in the sample data to add the “jinja” value of the field. For example, to map the ip parameter of a IPsum Threat Intelligence Feed to the value parameter of a FortiSOAR™ threat intel feed, click the id field, and then click the value field to populate its keys: 
+To map a field, click the key in the sample data to add the “jinja” value of the field. For example, to map the ip parameter of a IPsum Threat Intelligence Feed to the value parameter of a FortiSOAR™ threat intel feed, click the value field, and then click the ip field to populate its keys:
 
 ![](media/mapping.png)
 
